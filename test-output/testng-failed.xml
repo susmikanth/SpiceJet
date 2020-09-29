@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SpiceJet Automation]">
+  <listeners>
+    <listener class-name="com.spicejet.ExtentReportListener.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" name="SpiceJet Test(failed)">
+    <classes>
+      <class name="com.spicejet.testcases.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyUserNameTest"/>
+          <include name="teardown"/>
+          <include name="homePageTitleTest"/>
+        </methods>
+      </class> <!-- com.spicejet.testcases.HomePageTest -->
+    </classes>
+  </test> <!-- SpiceJet Test(failed) -->
+</suite> <!-- Failed suite [SpiceJet Automation] -->
